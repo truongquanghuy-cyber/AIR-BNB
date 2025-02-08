@@ -19,6 +19,7 @@
   background-color: #00bfff;
 
 
+
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -77,6 +78,7 @@ a.active {
   color: greenyellow;
 }
 
+<<<<<<< HEAD
 
 
 /* Đăng nhập CSS */
@@ -96,6 +98,8 @@ a.active {
 
 
 
+=======
+>>>>>>> cuong/main
 
 @media (prefers-color-scheme: light) {
   :root {
