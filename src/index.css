@@ -96,10 +96,15 @@ a.active {
   color: black;
 }
 
+input::placeholder {
+  color: black; /* Thay đổi màu của placeholder */
+}
 
 
 =======
 >>>>>>> cuong/main
+
+
 
 @media (prefers-color-scheme: light) {
   :root {

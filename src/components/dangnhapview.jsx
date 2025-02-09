@@ -1,10 +1,12 @@
 export function DangNhapView() {
     return (
         <>
-            <div className="bg-gray-200">
+
+        <div>
+            <div className="bg-gray-200 flex flex-col items-center justify-center">
                 <h1 className="title-dang-nhạp">DangNhap</h1>
-                <input type="text" holderplace="Tài khoản"></input>
-                <input type="password" holderplace="Mật khẩu"></input>
+                <input type="text" placeholder="Tài khoản"></input>
+                <input type="password" placeholder="Mật khẩu"></input>
                 <br />
                 <h2>Nếu bạn quên mật khẩu: <a href="#">Ấn vào đây</a></h2>
                 <br />
@@ -14,6 +16,7 @@ export function DangNhapView() {
                 <button>Đăng ký</button>
                 </div>
             </div>
+        </div>
         </>
     );
 }
