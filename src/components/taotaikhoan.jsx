@@ -77,7 +77,7 @@ export function TaoTaiKhoan() {
 
 
     return (
-        <form onSubmit={handleSubmit} className="p-4 max-w-md mx-auto bg-gray-100 shadow-lg rounded-lg ">
+        <form onSubmit={handleSubmit} className="p-4 max-w-md mx-auto bg-gray-100 shadow-lg rounded-lg flex flex-col gap-4 items-center padding-top-10 text-black">
             <h2 className="text-xl font-bold mb-4">Đăng Ký</h2>
 
 
@@ -94,12 +94,17 @@ export function TaoTaiKhoan() {
                 <option value="khac">Khác</option>
             </select>
 
+            <div className="flex gap-4">
 
-            <button type="submit" className="w-full p-2 bg-blue-500 text-white rounded" disabled={loading}>
-                {loading ? "Đang đăng ký..." : "Đăng ký"}
-            </button>
-
-
+                <button type="submit" className="w-full p-2 bg-blue-500 text-white rounded" disabled={loading}>
+                    {loading ? "Đang đăng ký..." : "Đăng ký"}
+                </button>
+                <button type="button" className="w-full p-2 bg-gray-500 text-white rounded">
+                    Đăng nhập
+                </button>
+            
+            </div>
+            
             {message && <p className="mt-2 text-center text-red-500">{message}</p>}
         </form>
     );
