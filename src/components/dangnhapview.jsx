@@ -1,6 +1,7 @@
 import { useState } from "react";
 
 export function DangNhapView() {
+
   return (
     <form className="p-4 max-w-md mx-auto bg-gray-100 shadow-lg rounded-lg flex flex-col gap-4 items-center text-black">
         <h2 className="text-xl font-bold mb-4">Đăng Nhập</h2>
@@ -30,4 +31,6 @@ export function DangNhapView() {
         </div>
     </form>
   );
+}
+
 }

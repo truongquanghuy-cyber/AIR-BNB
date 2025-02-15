@@ -8,6 +8,9 @@
 @import "tailwindcss";
 
 
+
+
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -16,7 +19,8 @@
 
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  background-color: #00bfff;
+
 
 
   font-synthesis: none;
@@ -38,7 +42,6 @@ a:hover {
 
 
 body {
- 
   margin: 0;
   display: flex;
   place-items: center;
@@ -76,6 +79,33 @@ a.active {
   /* font-size: 40px; */
   color: greenyellow;
 }
+
+<<<<<<< HEAD
+
+
+/* Đăng nhập CSS */
+
+.bg-gray-200 {
+  background-color: #bcbcbc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+.title-dang-nhap {
+  font-size: 2em;
+  font-weight: 500;
+  color: black;
+}
+
+input::placeholder {
+  color: black; /* Thay đổi màu của placeholder */
+}
+
+
+=======
+>>>>>>> cuong/main
+
 
 
 @media (prefers-color-scheme: light) {

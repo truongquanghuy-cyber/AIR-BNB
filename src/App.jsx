@@ -24,11 +24,11 @@ export function App() {
 
   return (
     <>
-      <div className="w-full flex justify-center items-center bg-gray-200">
-        <img src="public/img/antonio-janeski-VIGLnzEpOm4-unsplash.jpg"
+      {/* <div className="w-full flex justify-center items-center bg-gray-200">
+        <img src="./public/img/antonio-janeski-VIGLnzEpOm4-unsplash.jpg"
           alt=""
           className="w-full h-64 object-cover rounded-lg shadow-md" />
-      </div>
+      </div> */}
       <header className='flex justify-between items-center h-32 w-full text-center bg-black bg-opacity-70'>
         <div>
           <NavLink to="/form" className="text-blue-500 hover:text-red-700 w-full text-nowrap text-3xl bg-red-400" >Trang Chủ</NavLink>
@@ -42,8 +42,6 @@ export function App() {
                 Phòng View Model
               </NavLink>
             </li>
-
-
             <li>
               <NavLink to="/capnhatnguoidung" className="text-blue-600 hover:text-blue-800 text-nowrap">
                 Cập Nhật Người Dùng
