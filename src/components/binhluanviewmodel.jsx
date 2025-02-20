@@ -1,22 +1,23 @@
 
 export function BinhLuanViewModel() {
     return (
-        <div className="container mx-auto p-6 bg-white shadow-lg rounded-lg">
-            <h1 className="text-xl font-bold mb-4">Quản Lý Bình Luận</h1>
+        <div className="container mx-auto p-6 bg-white shadow-lg rounded-lg"
+            style={{ backgroundImage: "url('public/img/francesco-ungaro-0F_BpQa47S0-unsplash.jpg')" }}>
+            <h1 className="text-xl font-bold mb-4 text-black">Quản Lý Bình Luận</h1>
             <form action="">
                 <div>
                     <input
-                    className="w-full p-2 mb-2 border rounded"
+                        className="w-full p-2 mb-2 border rounded text-black"
                         type="text"
                         name="maphong"
                         placeholder="Mã Phòng" />
                     <input
-                    className="w-full p-2 mb-2 border rounded"
+                        className="w-full p-2 mb-2 border rounded text-black"
                         type="text"
                         name="manguoibinhluan"
                         placeholder="Mã Người Bình Luận" />
                     <textarea
-                    className="w-full p-2 mb-2 border rounded"
+                        className="w-full p-2 mb-2 border rounded text-black"
                         name="noidung"
                         id=""
                         placeholder="Nội Dung Bình Luận"></textarea>
@@ -28,7 +29,7 @@ export function BinhLuanViewModel() {
                         <span className="text-2xl cursor-pointer text-gray-300">★</span>
                         <span className="ml-2 text-gray-600">0 / 5</span>
                     </div>
-                    <button type="submit" className="text-xl font-bold mb-4">
+                    <button type="submit" className="w-full text-xl text-nowrap bg-zinc-800 text-white py-3 px-4 rounded-lg hover:bg-zinc-700 transition-colors">
                         Thêm Bình Luận
                     </button>
                 </div>

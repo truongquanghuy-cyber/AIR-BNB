@@ -1,6 +1,8 @@
 export function DatPhongViewModel() {
     return (
-        <div className="container mx-auto p-6 bg-white shadow-lg rounded-lg">
+        <div
+            className="container mx-auto p-6 bg-white shadow-lg rounded-l w-full "
+            style={{ backgroundImage: "url('public/img/prydumano-design-vYlmRFIsCIk-unsplash.jpg')" }}>
             <h1 className="text-3xl font-bold mb-6 text-center text-gray-800 ">
                 Danh Sách Đặt Phòng
             </h1>
@@ -10,14 +12,14 @@ export function DatPhongViewModel() {
                 <input className="px-2 py-1 rounded border border-gray-600 block w-full" type="text" name="loaiphong" placeholder="Loại Phòng" />
                 <br />
                 <div>
-                    <h2>Ngày Nhận Phòng</h2>
-                    <input className="px-2 py-1 rounded border border-gray-600 block w-full" type="date" name="ngaynhanphong" />
+                    <h2 className="text-black">Ngày Nhận Phòng</h2>
+                    <input className="px-2 py-1 rounded border border-gray-600 block w-full text-black" type="date" name="ngaynhanphong" />
                 </div>
 
                 <br />
                 <div>
-                    <h2>Ngày trả phòng</h2>
-                    <input className="px-2 py-1 rounded border border-gray-600 block w-full" type="date" name="ngaytraphong" />
+                    <h2 className="text-black">Ngày trả phòng</h2>
+                    <input className="px-2 py-1 rounded border border-gray-600 block w-full text-black" type="date" name="ngaytraphong" />
                 </div>
                 <br />
 
@@ -27,7 +29,7 @@ export function DatPhongViewModel() {
                 <br />
                 <div className="flex items-center space-x-2">
                     <input type="checkbox" name="dathanhtoan" id="dathanhtoan" className="w-4 h-4" />
-                    <label htmlFor="dathanhtoan" className="text-gray-700 font-medium">Đã Thanh Toán</label>
+                    <label htmlFor="dathanhtoan" className="text-gray-700 font-medium text-black">Đã Thanh Toán</label>
                 </div>
 
                 <br />
@@ -38,26 +40,26 @@ export function DatPhongViewModel() {
             <table>
                 <thead>
                     <tr>
-                        <th className="border border-gray-400">Mã Phòng</th>
-                        <th className="border border-gray-400">Tên Khách</th>
-                        <th className="border border-gray-400">Loại Phòng</th>
-                        <th className="border border-gray-400">Ngày Nhận Phòng</th>
-                        <th className="border border-gray-400">Ngày Trả Phòng</th>
-                        <th className="border border-gray-400">SĐT Khách</th>
-                        <th className="border border-gray-400">Tổng Giá</th>
-                        <th className="border border-gray-400">Đã Thanh Toán</th>
-                        <th className="border border-gray-400">Thao Tác</th>
+                        <th className="border border-gray-400 text-black">Mã Phòng</th>
+                        <th className="border border-gray-400 text-black">Tên Khách</th>
+                        <th className="border border-gray-400 text-black">Loại Phòng</th>
+                        <th className="border border-gray-400 text-black">Ngày Nhận Phòng</th>
+                        <th className="border border-gray-400 text-black">Ngày Trả Phòng</th>
+                        <th className="border border-gray-400 text-black">SĐT Khách</th>
+                        <th className="border border-gray-400 text-black">Tổng Giá</th>
+                        <th className="border border-gray-400 text-black">Đã Thanh Toán</th>
+                        <th className="border border-gray-400 text-black">Thao Tác</th>
                     </tr>
                 </thead>
                 <tbody>
-                    <td className="border border-gray-400">01</td>
-                    <td className="border border-gray-400">Trương Quang Huy</td>
-                    <td className="border border-gray-400">Vip</td>
-                    <td className="border border-gray-400">20/11/2024</td>
-                    <td className="border border-gray-400">22/11/2024</td>
-                    <td className="border border-gray-400">0905435172</td>
-                    <td className="border border-gray-400">2000$</td>
-                    <td className="border border-gray-400">Đã Thanh Toán</td>
+                    <td className="border border-gray-400 text-black">01</td>
+                    <td className="border border-gray-400 text-black">Trương Quang Huy</td>
+                    <td className="border border-gray-400 text-black">Vip</td>
+                    <td className="border border-gray-400 text-black">20/11/2024</td>
+                    <td className="border border-gray-400 text-black">22/11/2024</td>
+                    <td className="border border-gray-400 text-black">0905435172</td>
+                    <td className="border border-gray-400 text-black">2000$</td>
+                    <td className="border border-gray-400 text-black">Đã Thanh Toán</td>
                     <td>
                         <button className="px-2 py-1 bg-red-600 text-white rounded">Sửa</button>
                         <button className="px-2 py-1 bg-blue-600 text-white rounded">Xóa</button>

@@ -77,35 +77,69 @@ export function TaoTaiKhoan() {
 
 
     return (
-        <form onSubmit={handleSubmit} className="p-4 max-w-md mx-auto bg-gray-100 shadow-lg rounded-lg flex flex-col gap-4 items-center padding-top-10 text-black">
-            <h2 className="text-xl font-bold mb-4">Đăng Ký</h2>
+        <div style={{ backgroundImage: "url('/public/img/tommao-wang-L_5u4iweMGg-unsplash.jpg')" }}>
+            <form
+                onSubmit={handleSubmit}
+                className="p-4 max-w-md mx-auto bg-gray-100 shadow-lg rounded-lg flex flex-col gap-4 items-center padding-top-10 text-black"
+            >
+                <h2 className="text-xl font-bold mb-4">Đăng Ký</h2>
 
 
-            <input name="name" onChange={handleChange} value={user.name} type="text" placeholder="Nhập tên" className="w-full p-2 mb-2 border rounded" />
-            <input name="email" onChange={handleChange} value={user.email} type="email" placeholder="Nhập email" className="w-full p-2 mb-2 border rounded" />
-            <input name="password" onChange={handleChange} value={user.password} type="password" placeholder="Nhập mật khẩu" className="w-full p-2 mb-2 border rounded" />
-            <input name="phone" onChange={handleChange} value={user.phone} type="number" placeholder="Nhập số phone" className="w-full p-2 mb-2 border rounded" />
-            <input name="birthday" onChange={handleChange} value={user.birthday} type="date" className="w-full p-2 mb-2 border rounded" />
+                <input
+                    name="name"
+                    onChange={handleChange}
+                    value={user.name}
+                    type="text"
+                    placeholder="Nhập tên"
+                    className="w-full p-2 mb-2 border rounded" />
+                <input
+                    name="email"
+                    onChange={handleChange}
+                    value={user.email}
+                    type="email"
+                    placeholder="Nhập email"
+                    className="w-full p-2 mb-2 border rounded" />
+                <input name="password"
+                    onChange={handleChange}
+                    value={user.password}
+                    type="password"
+                    placeholder="Nhập mật khẩu"
+                    className="w-full p-2 mb-2 border rounded" />
+                <input
+                    name="phone"
+                    onChange={handleChange}
+                    value={user.phone}
+                    type="number"
+                    placeholder="Nhập số phone"
+                    className="w-full p-2 mb-2 border rounded" />
+                <input
+                    name="birthday"
+                    onChange={handleChange}
+                    value={user.birthday}
+                    type="date"
+                    className="w-full p-2 mb-2 border rounded" />
 
 
-            <select name="gender" onChange={handleChange} value={user.gender} className="w-full p-2 mb-2 border rounded">
-                <option value="male">Nam</option>
-                <option value="female">Nữ</option>
-                <option value="khac">Khác</option>
-            </select>
+                <select name="gender" onChange={handleChange} value={user.gender} className="w-full p-2 mb-2 border rounded">
+                    <option value="male">Nam</option>
+                    <option value="female">Nữ</option>
+                    <option value="khac">Khác</option>
+                </select>
 
-            <div className="flex gap-4">
+                <div className="flex gap-4">
 
-                <button type="submit" className="w-full p-2 bg-blue-500 text-white rounded" disabled={loading}>
-                    {loading ? "Đang đăng ký..." : "Đăng ký"}
-                </button>
-                <button type="button" className="w-full p-2 bg-gray-500 text-white rounded">
-                    Đăng nhập
-                </button>
-            
-            </div>
-            
-            {message && <p className="mt-2 text-center text-red-500">{message}</p>}
-        </form>
+                    <button type="submit" className="w-1/2 p-2 bg-gray-500 text-white rounded text-lg" disabled={loading}>
+                        {loading ? "Đang đăng ký..." : "Đăng ký"}
+                    </button>
+                    <button type="button" className="w-1/2 p-2 bg-gray-500 text-white rounded text-lg">
+                        Đăng nhập
+                    </button>
+
+                </div>
+
+                {message && <p className="mt-2 text-center text-red-500">{message}</p>}
+            </form>
+        </div>
+
     );
 }

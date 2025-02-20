@@ -3,8 +3,8 @@ export function DangNhap() {
         <>
             <div>
                 <h1>DangNhap</h1>
-                <input type="text" holderplace="Tài khoản"></input>
-                <input type="password" holderplace="Mật khẩu"></input>
+                <input type="text" placeholder="Tài khoản"></input>
+                <input type="password" placeholder="Mật khẩu"></input>
             </div>
         </>
     );
