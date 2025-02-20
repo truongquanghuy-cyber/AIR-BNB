@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 // export function TaoTaiKhoan() {
 //     return (
 //         <>
@@ -17,6 +18,7 @@ import { useState } from "react";
 //         </>
 //     );
 // };
+
 
 export function TaoTaiKhoan() {
     const [user, setUser] = useState({
@@ -77,6 +79,7 @@ export function TaoTaiKhoan() {
 
 
     return (
+
         <div style={{ backgroundImage: "url('/public/img/tommao-wang-L_5u4iweMGg-unsplash.jpg')" }}>
             <form
                 onSubmit={handleSubmit}

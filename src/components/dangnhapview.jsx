@@ -49,6 +49,5 @@ export function DangNhapView() {
           </button>
         </div>
       </form>
-    </div>
   );
 }
