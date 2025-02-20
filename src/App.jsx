@@ -14,7 +14,6 @@ import { TaoTaiKhoan } from './components/taotaikhoan'
 import { Error } from './error'
 import './index.css'
 
-
 // import "tailwindcss";
 // import 'App.css'
 export function App() {

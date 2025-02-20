@@ -1,5 +1,7 @@
 import "tailwindcss";
 import React, { useState, useEffect } from 'react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faUserCircle, faMapMarkerAlt, faCalendarAlt, faCalendarCheck, faSearch, faUsers } from '@fortawesome/free-solid-svg-icons';
 import { FormAdd } from "./formadd";
 export function Form() {
 
