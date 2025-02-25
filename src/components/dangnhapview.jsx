@@ -1,14 +1,19 @@
 import { useState } from "react";
+import axios from "axios";
+
+
 
 export function DangNhapView() {
+
+
   return (
     <div
-      className="bg-[url(/img/ahmed-zt1c95Dv4r8-unsplash.jpg)]  bg-cover bg-center "
+      className="bg-[url(/img/ahmed-zt1c95Dv4r8-unsplash.jpg)] flex justify-center items-center bg-cover bg-center "
       // style={{ backgroundImage: "url('/img/ahmed-zt1c95Dv4r8-unsplash.jpg')" }}
     >
       <form className="p-6 max-w-md w-full mx-auto bg-gray-100 bg-opacity-90 shadow-lg rounded-lg flex flex-col gap-4 items-center text-black">
         <h2 className="text-2xl font-bold mb-4">Đăng Nhập</h2>
-
+  
         <div className="w-full">
           <label htmlFor="username" className="block text-sm font-medium">
             Tài khoản
@@ -20,7 +25,7 @@ export function DangNhapView() {
             className="w-full p-2 mt-1 border rounded focus:ring-2 focus:ring-blue-400 outline-none"
           />
         </div>
-
+  
         <div className="w-full">
           <label htmlFor="password" className="block text-sm font-medium">
             Mật khẩu
@@ -32,14 +37,14 @@ export function DangNhapView() {
             className="w-full p-2 mt-1 border rounded focus:ring-2 focus:ring-blue-400 outline-none"
           />
         </div>
-
+  
         <p className="text-sm text-gray-700">
           Nếu bạn quên mật khẩu:{" "}
           <a href="#" className="text-blue-500 hover:text-blue-700">
             Ấn vào đây
           </a>
         </p>
-
+  
         <div className="flex gap-4 w-full">
           <button className="w-1/2 p-2 bg-gray-500 text-white rounded text-lg hover:bg-gray-600 transition">
             Đăng Nhập
@@ -49,5 +54,6 @@ export function DangNhapView() {
           </button>
         </div>
       </form>
+    </div>
   );
-}
+}  

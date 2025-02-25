@@ -30,9 +30,13 @@ export function ViTriViewModel() {
     };
 
     return (
-
-        <div className="max-w-6xl mx-auto p-6 bg-white shadow-lg rounded-lg text-black w-full"
-            style={{ backgroundImage: "url('public/img/mark-de-jong-t-7Cy6ZD0-k-unsplash.jpg')" }}>
+        <div
+            className="max-w-6xl mx-auto p-6 bg-white shadow-lg rounded-lg text-black w-full"
+            style={{
+                backgroundImage:
+                    "url('public/img/mark-de-jong-t-7Cy6ZD0-k-unsplash.jpg')",
+            }}
+        >
             <div className="flex items-center justify-between gap-6">
                 <div className="flex-1">
                     <h2>Địa điểm</h2>
@@ -50,7 +54,7 @@ export function ViTriViewModel() {
                     <input
                         type="date"
                         value={checkIn}
-                        onChange={e => setCheckIn(e.target.value)}
+                        onChange={(e) => setCheckIn(e.target.value)}
                         className="w-full p-3 mb-2 border rounded mt-4"
                     />
                 </div>
@@ -59,7 +63,7 @@ export function ViTriViewModel() {
                     <input
                         type="date"
                         value={checkOut}
-                        onChange={e => setCheckOut(e.target.value)}
+                        onChange={(e) => setCheckOut(e.target.value)}
                         className="w-full p-3 mb-2 border rounded mt-4"
                     />
                 </div>
@@ -68,69 +72,16 @@ export function ViTriViewModel() {
                     <input
                         type="number"
                         value={guests}
-                        onChange={e => setGuests(e.target.value)}
+                        onChange={(e) => setGuests(e.target.value)}
                         min="1"
                         placeholder="Khách"
                         className="w-full p-3 border rounded"
                     />
                 </div>
-
-        <button className="bg-green-500 text-white p-2 rounded-full">
-
-            <div className="max-w-6xl mx-auto p-6 bg-white shadow-lg rounded-lg text-black w-full"
-                style={{ backgroundImage: "url('public/img/mark-de-jong-t-7Cy6ZD0-k-unsplash.jpg')" }}>
-                <div className="flex items-center justify-between gap-6">
-                    <div className="flex-1">
-                        <h2>Địa điểm</h2>
-                        <input
-                            type="text"
-                            value={search}
-                            onChange={handleSearchChange}
-                            placeholder="Vui lòng chọn vị trí"
-                            className="w-full p-3 mb-2 border rounded mt-4"
-                            disabled={loading}
-                        />
-                    </div>
-                    <div className="flex-1">
-                        <h2>Nhận phòng</h2>
-                        <input
-                            type="date"
-                            value={checkIn}
-                            onChange={e => setCheckIn(e.target.value)}
-                            className="w-full p-3 mb-2 border rounded mt-4"
-                        />
-                    </div>
-                    <div className="flex-1">
-                        <h2>Trả phòng</h2>
-                        <input
-                            type="date"
-                            value={checkOut}
-                            onChange={e => setCheckOut(e.target.value)}
-                            className="w-full p-3 mb-2 border rounded mt-4"
-                        />
-                    </div>
-                    <div className="flex-1">
-                        <h2>Khách</h2>
-                        <input
-                            type="number"
-                            value={guests}
-                            onChange={e => setGuests(e.target.value)}
-                            min="1"
-                            placeholder="Khách"
-                            className="w-full p-3 border rounded"
-                        />
-                    </div>
-                    <button className="w-1/3 p-3 bg-blue-500 text-white rounded text-lg">
-                        Tìm kiếm
-                    </button>
-                </div>
-
                 <button className="w-1/3 p-3 bg-blue-500 text-white rounded text-lg">
                     Tìm kiếm
                 </button>
-
             </div>
-        </button>    
+        </div>
     );
-    
-}
+}    
