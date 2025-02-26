@@ -43,8 +43,9 @@ a:hover {
 
 
 body {
-  width: 900px;
-  height: 600px;
+  /*Không nên set width và height của thẻ body nhé anh, điều này gây mất form ở một số thiết bị*/
+  /* width: 900px;
+  height: 600px; */
   margin: 0;
   padding: 0;
   display: flex;
