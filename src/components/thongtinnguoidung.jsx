@@ -1,7 +1,12 @@
-
+import('./API/apinguoidung')
 export function ThongTinNguoiDung() {
     return (
-        <div style={{ backgroundImage: "url('public/img/the-chaffins-XSYnPMTNRg0-unsplash.jpg')" }}>
+        <div
+            style={{
+                backgroundImage: "url('/img/the-chaffins-XSYnPMTNRg0-unsplash.jpg')",
+            }}
+            className="flex justify-center items-center bg-cover bg-center min-h-screen"
+        >
             <div >
                 <table>
                     <thead>

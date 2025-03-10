@@ -1,10 +1,25 @@
+import("./API/apibinhluan")
 
 export function BinhLuanViewModel() {
+    const handleSubmit = (e) => {
+        e.preventDefault(e);
+        console.log(e);
+
+        const formData = new FormData(e.target);
+        console.log({
+            maphong: formData.get("maphong"),
+            manguoibinhluan: formData.get("manguoibinhluan"),
+            noidung: formData.get("noidung")
+        })
+    }
+
+
+
     return (
         <div className="container mx-auto p-6 bg-white shadow-lg rounded-lg"
-            style={{ backgroundImage: "url('public/img/francesco-ungaro-0F_BpQa47S0-unsplash.jpg')" }}>
+            style={{ backgroundImage: "url('/img/francesco-ungaro-0F_BpQa47S0-unsplash.jpg')" }}>
             <h1 className="text-xl font-bold mb-4 text-black">Quản Lý Bình Luận</h1>
-            <form action="">
+            <form onSubmit={handleSubmit}>
                 <div>
                     <input
                         className="w-full p-2 mb-2 border rounded text-black"
@@ -44,9 +59,7 @@ export function BinhLuanViewModel() {
                     <div className="flex justify-between items-center">
                         <span>Người bình luận :</span>
                         <span>Đánh giá: </span>
-
                     </div>
-
                 </div>
             </div>
         </div>

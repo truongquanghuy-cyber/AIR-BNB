@@ -1,32 +1,52 @@
-import React from 'react';
+// import React from 'react';
 // import '../index.css';
 // import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 // import { faSearch } from '@fortawesome/free-solid-svg-icons';
-
+import("./API/apiphong")
 export function PhongViewModel() {
+    const handleSubmit = (e) => {
+        e.preventDefault(e);
+        console.log(e);
+
+        const formData = new FormData(e.target);
+        console.log({
+            search: formData.get("search"),
+            checkin: formData.get("checkin"),
+            checkout: formData.get("checkout"),
+            guests: formData.get("guests")
+        })
+    }
+
+
     return (
-        <div className="container mx-auto p-6 bg-white shadow-lg rounded-lg bg-[url('public/img/prydumano-design-vYlmRFIsCIk-unsplash.jpg')]  flex">
+        <div  style={{
+            backgroundImage: "url('/img/prydumano-design-vYlmRFIsCIk-unsplash.jpg')",
+          }}
+          className="flex justify-center items-center bg-cover bg-center min-h-screen">
             <div className="flex-1 pt-6 pl-20">
-                <input
-                    
-                    type="text"
-                    placeholder="Khu vực bạn đã chọn"
-                    className="search-input px-2 py-1 rounded border border-gray-600 block w-80" />
+                <form onSubmit={handleSubmit}>
+                    <input
+
+                        type="text"
+                        placeholder="Khu vực bạn đã chọn"
+                        className="search-input px-2 py-1 rounded border border-gray-600 block w-80" />
                     <br />
-                <input
-                    type="date"
-                    className="search-date px-2 py-1 rounded border border-gray-600 block w-80" />
+                    <input
+                        type="date"
+                        className="search-date px-2 py-1 rounded border border-gray-600 block w-80" />
                     <br />
-                <input
-                    type="date"
-                    className="search-date px-2 py-1 rounded border border-gray-600 block w-80" />
+                    <input
+                        type="date"
+                        className="search-date px-2 py-1 rounded border border-gray-600 block w-80" />
                     <br />
-                <input
-                    type="number"
-                    placeholder="Thêm khách"
-                    className="search-guests px-2 py-1 rounded border border-gray-600 block w-80" />
+                    <input
+                        type="number"
+                        placeholder="Thêm khách"
+                        className="search-guests px-2 py-1 rounded border border-gray-600 block w-80" />
                     <br />
-                <button className="search-button w-80 p-2 bg-gray-500 text-white rounded text-lg">Tìm kiếm</button>
+                    <button className="search-button w-80 p-2 bg-gray-500 text-white rounded text-lg">Tìm kiếm</button>
+                </form>
+
             </div>
             <div className=" flex-1">
                 <h2>Hơn 3000 chỗ ở - Chỗ ở tại khu vực bản đồ đã chọn</h2>
