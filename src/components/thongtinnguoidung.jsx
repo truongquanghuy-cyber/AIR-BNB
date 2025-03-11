@@ -1,5 +1,7 @@
+
 import('./API/apinguoidung')
 export function ThongTinNguoiDung() {
+    
     return (
         <div
             style={{
@@ -11,7 +13,7 @@ export function ThongTinNguoiDung() {
                 <table>
                     <thead>
                         <tr>
-                            <th className="border border-gray-400">Mã Phòng</th>
+                            <th className="border border-gray-400 ">Mã Phòng</th>
                             <th className="border border-gray-400">Tên Khách</th>
                             <th className="border border-gray-400">Loại Phòng</th>
                             <th className="border border-gray-400">Ngày Nhận Phòng</th>
@@ -23,14 +25,14 @@ export function ThongTinNguoiDung() {
                         </tr>
                     </thead>
                     <tbody>
-                        <td className="border border-gray-400">01</td>
-                        <td className="border border-gray-400">Trương Quang Huy</td>
-                        <td className="border border-gray-400">Vip</td>
-                        <td className="border border-gray-400">20/11/2024</td>
-                        <td className="border border-gray-400">22/11/2024</td>
-                        <td className="border border-gray-400">0905435172</td>
-                        <td className="border border-gray-400">2000$</td>
-                        <td className="border border-gray-400">Đã Thanh Toán</td>
+                        <td className="border border-gray-400 text-red-500">01</td>
+                        <td className="border border-gray-400 text-red-500">Trương Quang Huy</td>
+                        <td className="border border-gray-400 text-red-500">Vip</td>
+                        <td className="border border-gray-400 text-red-500">20/11/2024</td>
+                        <td className="border border-gray-400 text-red-500">22/11/2024</td>
+                        <td className="border border-gray-400 text-red-500">0905435172</td>
+                        <td className="border border-gray-400 text-red-500">2000$</td>
+                        <td className="border border-gray-400 text-red-500">Đã Thanh Toán</td>
                         <td>
                             <button className="px-2 py-1 bg-red-600 text-white rounded">Sửa</button>
                             <button className="px-2 py-1 bg-blue-600 text-white rounded">Xóa</button>

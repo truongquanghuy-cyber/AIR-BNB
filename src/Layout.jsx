@@ -88,6 +88,7 @@ const Layout = () => {
                 <a
                   href="/thongtinnguoidung"
                   className="text-black hover:text-blue-800 text-nowrap"
+                  
                 >
                   <FontAwesomeIcon icon={faUserCircle} className="mr-2" />
                   Thông Tin Người Dùng
